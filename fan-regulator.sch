@@ -1,0 +1,300 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+Text GLabel 7700 3350 0    50   Input ~ 0
+FAN_PWM_1
+$Comp
+L Connector:Conn_Coaxial_Power Power1
+U 1 1 5F1A320D
+P 3950 2500
+F 0 "Power1" V 4083 2450 50  0000 C CNN
+F 1 "12V" H 4038 2405 50  0001 L CNN
+F 2 "Terminal_Blocks:TerminalBlock_bornier-2_P5.08mm" H 3950 2450 50  0001 C CNN
+F 3 "~" H 3950 2450 50  0001 C CNN
+	1    3950 2500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:+12V #PWR0102
+U 1 1 5F1BB55E
+P 7700 2750
+F 0 "#PWR0102" H 7700 2600 50  0001 C CNN
+F 1 "+12V" V 7715 2878 50  0000 L CNN
+F 2 "" H 7700 2750 50  0001 C CNN
+F 3 "" H 7700 2750 50  0001 C CNN
+	1    7700 2750
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 2750 7800 2750
+Wire Wire Line
+	7700 2850 7800 2850
+Wire Wire Line
+	7700 2650 7800 2650
+$Comp
+L power:+5V #PWR0105
+U 1 1 5F1BEEA5
+P 7700 2550
+F 0 "#PWR0105" H 7700 2400 50  0001 C CNN
+F 1 "+5V" V 7715 2678 50  0000 L CNN
+F 2 "" H 7700 2550 50  0001 C CNN
+F 3 "" H 7700 2550 50  0001 C CNN
+	1    7700 2550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 2550 7800 2550
+$Comp
+L Connector_Generic:Conn_01x04 FAN1
+U 1 1 5F1C42A7
+P 8000 3150
+F 0 "FAN1" H 8080 3096 50  0000 L CNN
+F 1 "Conn_01x04" H 8080 3051 50  0001 L CNN
+F 2 "Connect:Fan_Pin_Header_Straight_1x04" H 8000 3150 50  0001 C CNN
+F 3 "~" H 8000 3150 50  0001 C CNN
+	1    8000 3150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7700 3050 7800 3050
+Text GLabel 7700 3850 0    50   Input ~ 0
+FAN_PWM_2
+Wire Wire Line
+	7800 3550 7700 3550
+$Comp
+L power:+12V #PWR0107
+U 1 1 5F1D3A3A
+P 7700 3050
+F 0 "#PWR0107" H 7700 2900 50  0001 C CNN
+F 1 "+12V" V 7715 3178 50  0000 L CNN
+F 2 "" H 7700 3050 50  0001 C CNN
+F 3 "" H 7700 3050 50  0001 C CNN
+	1    7700 3050
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 3150 7800 3150
+Wire Wire Line
+	7700 3350 7800 3350
+$Comp
+L power:+12V #PWR0110
+U 1 1 5F1D6691
+P 7700 3550
+F 0 "#PWR0110" H 7700 3400 50  0001 C CNN
+F 1 "+12V" V 7715 3678 50  0000 L CNN
+F 2 "" H 7700 3550 50  0001 C CNN
+F 3 "" H 7700 3550 50  0001 C CNN
+	1    7700 3550
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	7700 3650 7800 3650
+Wire Wire Line
+	7700 3850 7800 3850
+$Comp
+L power:+12V #PWR0111
+U 1 1 5F1D9AFF
+P 3750 2500
+F 0 "#PWR0111" H 3750 2350 50  0001 C CNN
+F 1 "+12V" V 3765 2628 50  0000 L CNN
+F 2 "" H 3750 2500 50  0001 C CNN
+F 3 "" H 3750 2500 50  0001 C CNN
+	1    3750 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3750 2500 3850 2500
+Wire Wire Line
+	4250 2500 4150 2500
+$Comp
+L Connector_Generic:Conn_01x04 DHT11
+U 1 1 5F18AD99
+P 8000 4150
+F 0 "DHT11" H 8200 4100 50  0000 C CNN
+F 1 "Conn_01x04_Female" H 7892 4344 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8000 4150 50  0001 C CNN
+F 3 "~" H 8000 4150 50  0001 C CNN
+	1    8000 4150
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7800 4350 7700 4350
+$Comp
+L Connector_Generic:Conn_01x04 CV1
+U 1 1 5F274BD3
+P 8000 2650
+F 0 "CV1" H 8080 2596 50  0000 L CNN
+F 1 "Conn_01x04" H 8080 2551 50  0001 L CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x04_Pitch2.54mm" H 8000 2650 50  0001 C CNN
+F 3 "~" H 8000 2650 50  0001 C CNN
+	1    8000 2650
+	1    0    0    -1  
+$EndComp
+Text GLabel 7700 4150 0    50   Input ~ 0
+D_DHT
+Wire Wire Line
+	7800 4150 7700 4150
+Wire Wire Line
+	7800 4050 7700 4050
+Text GLabel 7700 4050 0    50   Input ~ 0
+5V
+$Comp
+L Connector_Generic:Conn_02x05_Counter_Clockwise ETH1
+U 1 1 5F2C882C
+P 3950 3250
+F 0 "ETH1" H 4000 3575 50  0000 C CNN
+F 1 "Conn_02x05_Counter_Clockwise" H 4000 3576 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_2x05_Pitch2.54mm" H 3950 3250 50  0001 C CNN
+F 3 "~" H 3950 3250 50  0001 C CNN
+	1    3950 3250
+	1    0    0    -1  
+$EndComp
+Text GLabel 4250 3050 2    50   Input ~ 0
+5V
+Text GLabel 3750 3350 0    50   Input ~ 0
+E_MISO
+Text GLabel 4250 3250 2    50   Input ~ 0
+E_MOSI
+Text GLabel 3750 3250 0    50   Input ~ 0
+E_SCK
+Text GLabel 4250 3150 2    50   Input ~ 0
+E_NSS
+Text GLabel 5500 3300 0    50   Input ~ 0
+FAN_PWM_1
+Text GLabel 5500 3400 0    50   Input ~ 0
+FAN_PWM_2
+$Comp
+L Connector_Generic:Conn_01x04 FAN2
+U 1 1 5F1CF0F9
+P 8000 3650
+F 0 "FAN2" H 8080 3596 50  0000 L CNN
+F 1 "Conn_01x04" H 8080 3551 50  0001 L CNN
+F 2 "Connect:Fan_Pin_Header_Straight_1x04" H 8000 3650 50  0001 C CNN
+F 3 "~" H 8000 3650 50  0001 C CNN
+	1    8000 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0101
+U 1 1 5F2EF14D
+P 6000 4500
+F 0 "#PWR0101" H 6000 4250 50  0001 C CNN
+F 1 "GND" H 6005 4327 50  0000 C CNN
+F 2 "" H 6000 4500 50  0001 C CNN
+F 3 "" H 6000 4500 50  0001 C CNN
+	1    6000 4500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 5F2F11BB
+P 7700 4350
+F 0 "#PWR0103" H 7700 4100 50  0001 C CNN
+F 1 "GND" V 7705 4222 50  0000 R CNN
+F 2 "" H 7700 4350 50  0001 C CNN
+F 3 "" H 7700 4350 50  0001 C CNN
+	1    7700 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 5F2F165B
+P 7700 3650
+F 0 "#PWR0104" H 7700 3400 50  0001 C CNN
+F 1 "GND" V 7705 3522 50  0000 R CNN
+F 2 "" H 7700 3650 50  0001 C CNN
+F 3 "" H 7700 3650 50  0001 C CNN
+	1    7700 3650
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR0106
+U 1 1 5F2F1B73
+P 7700 3150
+F 0 "#PWR0106" H 7700 2900 50  0001 C CNN
+F 1 "GND" V 7705 3022 50  0000 R CNN
+F 2 "" H 7700 3150 50  0001 C CNN
+F 3 "" H 7700 3150 50  0001 C CNN
+	1    7700 3150
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 3800 0    50   Input ~ 0
+E_NSS
+Text GLabel 5500 3900 0    50   Input ~ 0
+E_MOSI
+Text GLabel 5500 4000 0    50   Input ~ 0
+E_MISO
+Text GLabel 5500 4100 0    50   Input ~ 0
+E_SCK
+Text GLabel 6200 2400 1    50   Input ~ 0
+5V
+Text GLabel 6100 2400 1    50   Input ~ 0
+3V3
+$Comp
+L power:+5V #PWR0108
+U 1 1 5F2F47A0
+P 5900 2400
+F 0 "#PWR0108" H 5900 2250 50  0001 C CNN
+F 1 "+5V" V 5915 2528 50  0000 L CNN
+F 2 "" H 5900 2400 50  0001 C CNN
+F 3 "" H 5900 2400 50  0001 C CNN
+	1    5900 2400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 5F2FC2C6
+P 3750 3050
+F 0 "#PWR0109" H 3750 2800 50  0001 C CNN
+F 1 "GND" V 3755 2922 50  0000 R CNN
+F 2 "" H 3750 3050 50  0001 C CNN
+F 3 "" H 3750 3050 50  0001 C CNN
+	1    3750 3050
+	0    1    1    0   
+$EndComp
+Text GLabel 5500 3100 0    50   Input ~ 0
+D_DHT
+$Comp
+L power:GND #PWR0112
+U 1 1 5F31FFED
+P 4250 2500
+F 0 "#PWR0112" H 4250 2250 50  0001 C CNN
+F 1 "GND" V 4255 2372 50  0000 R CNN
+F 2 "" H 4250 2500 50  0001 C CNN
+F 3 "" H 4250 2500 50  0001 C CNN
+	1    4250 2500
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	6000 4400 6000 4450
+$Comp
+L MCU_Module:Arduino_Nano_v3.x Arduino1
+U 1 1 5F2CCBCD
+P 6000 3400
+F 0 "Arduino1" H 6000 3400 50  0000 C CNN
+F 1 "Arduino_Nano_v3.x" H 6000 2220 50  0001 C CNN
+F 2 "Module:Arduino_Nano" H 6000 3400 50  0001 C CIN
+F 3 "http://www.mouser.com/pdfdocs/Gravitech_Arduino_Nano3_0.pdf" H 6000 3400 50  0001 C CNN
+	1    6000 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6100 4400 6100 4450
+Wire Wire Line
+	6100 4450 6000 4450
+Connection ~ 6000 4450
+Wire Wire Line
+	6000 4450 6000 4500
+$EndSCHEMATC
