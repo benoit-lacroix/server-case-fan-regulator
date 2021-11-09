@@ -1,3 +1,7 @@
-# Server Case Fan Regulator - PCB Design
+# Server Case Fan Regulator
 
-This project is the PCB design part of the Server Fan Regulator
+Fan system for server case.
+
+This project includes:
+- Schematics and PCB design (KiCAD)
+- Software (Arduino Sketch)
